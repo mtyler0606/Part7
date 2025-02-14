@@ -89,9 +89,9 @@ const CreateNew = (props) => {
 
   const resetForm = (e) => {
     e.preventDefault()
-    content.reset()
-    author.reset()
-    info.reset()
+    content.onChange(e)
+    author.onChange(e)
+    info.onChange(e)
   }
 
   return (
